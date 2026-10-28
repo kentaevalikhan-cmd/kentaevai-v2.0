@@ -17,4 +17,27 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <div id="log"></div>
+<input id="inp" placeholder="Спросите что-нибудь">
+<button onclick="send()">Отправить</button>
+
+<script>
+const history = [];
+async function send() {
+  const inp = document.getElementById("inp");
+  const log = document.getElementById("log");
+  if (!inp.value.trim()) return;
+  history.push({ role: "user", content: inp.value });
+  log.innerHTML += `<p><b>Вы:</b> ${inp.value}</p>`;
+  inp.value = "";
+  const r = await fetch("/api/chat", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ messages: history }),
+  });
+  const { text } = await r.json();
+  history.push({ role: "assistant", content: text });
+  log.innerHTML += `<p><b>ИИ:</b> ${text}</p>`;
+}
+</script>
 </html>
