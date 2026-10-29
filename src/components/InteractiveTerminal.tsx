@@ -77,10 +77,10 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
       role: 'assistant',
       content:
         lang === 'kk'
-          ? 'Сәлем! Мен KentaevAI 2.0 — жаңа буынды кванттық нейрондық моделімін. Мен 3D бөлшектер өрісін басқарамын, код жазамын, кескіндерді талдаймын және инженерлік есептерді орындаймын.\n\nЖоғарыдағы бөлімдерді көріңіз: «Код студиясы», «Көру», «3D Физика», «Құралдар» немесе «Сынақ»!'
+          ? 'Сәлем! Мен KentaevAI Crystal 2.2 — жаңа буынды кванттық нейрондық моделімін. Мен 3D бөлшектер өрісін басқарамын, код жазамын, кескіндерді талдаймын және инженерлік есептерді орындаймын.\n\nЖоғарыдағы бөлімдерді көріңіз: «Код студиясы», «Көру», «3D Физика», «Құралдар» немесе «Сынақ»!'
           : lang === 'ru'
-          ? 'Привет! Я KentaevAI 2.0 — квантовая нейронная модель нового поколения. Я управляю 3D полем частиц, пишу и тестирую код, анализирую изображения и выполняю инженерные вычисления.\n\nПопробуйте переключить вкладки вверху: «Код», «Зрение», «Физика 3D», «Инструменты» или «Бенчмарк»!'
-          : 'Greetings. I am KentaevAI 2.0. I control this 3D quantum particle canvas, write and execute code, analyze images, and run scientific tools.\n\nExplore the tabs above: Code, Vision, Particle Lab, Tools Vault, or Live Benchmark!',
+          ? 'Привет! Я KentaevAI Crystal 2.2 — квантовая нейронная модель нового поколения. Я управляю 3D полем частиц, пишу и тестирую код, анализирую изображения и выполняю инженерные вычисления.\n\nПопробуйте переключить вкладки вверху: «Код», «Зрение», «Физика 3D», «Инструменты» или «Бенчмарк»!'
+          : 'Greetings. I am KentaevAI Crystal 2.2. I control this 3D quantum particle canvas, write and execute code, analyze images, and run scientific tools.\n\nExplore the tabs above: Code, Vision, Particle Lab, Tools Vault, or Live Benchmark!',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
@@ -194,10 +194,10 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
       if (prev.length === 1 && prev[0].id === 'welcome') {
         const welcomeText =
           lang === 'kk'
-            ? 'Сәлем! Мен KentaevAI 2.0 — жаңа буынды кванттық нейрондық моделімін. Мен 3D бөлшектер өрісін басқарамын, код жазамын, кескіндерді талдаймын және инженерлік есептерді орындаймын.\n\nЖоғарыдағы бөлімдерді көріңіз: «Код студиясы», «Көру», «3D Физика», «Құралдар» немесе «Сынақ»!'
+            ? 'Сәлем! Мен KentaevAI Crystal 2.2 — жаңа буынды кванттық нейрондық моделімін. Мен 3D бөлшектер өрісін басқарамын, код жазамын, кескіндерді талдаймын және инженерлік есептерді орындаймын.\n\nЖоғарыдағы бөлімдерді көріңіз: «Код студиясы», «Көру», «3D Физика», «Құралдар» немесе «Сынақ»!'
             : lang === 'ru'
-            ? 'Привет! Я KentaevAI 2.0 — квантовая нейронная модель нового поколения. Я управляю 3D полем частиц, пишу и тестирую код, анализирую изображения и выполняю инженерные вычисления.\n\nПопробуйте переключить вкладки вверху: «Код», «Зрение», «Физика 3D», «Инструменты» или «Бенчмарк»!'
-            : 'Greetings. I am KentaevAI 2.0. I control this 3D quantum particle canvas, write and execute code, analyze images, and run scientific tools.\n\nExplore the tabs above: Code, Vision, Particle Lab, Tools Vault, or Live Benchmark!';
+            ? 'Привет! Я KentaevAI Crystal 2.2 — квантовая нейронная модель нового поколения. Я управляю 3D полем частиц, пишу и тестирую код, анализирую изображения и выполняю инженерные вычисления.\n\nПопробуйте переключить вкладки вверху: «Код», «Зрение», «Физика 3D», «Инструменты» или «Бенчмарк»!'
+            : 'Greetings. I am KentaevAI Crystal 2.2. I control this 3D quantum particle canvas, write and execute code, analyze images, and run scientific tools.\n\nExplore the tabs above: Code, Vision, Particle Lab, Tools Vault, or Live Benchmark!';
         return [{ ...prev[0], content: welcomeText }];
       }
       return prev;
@@ -224,7 +224,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
         { label: '✦ Тарифы', prompt: 'Покажи доступные тарифы' },
       ],
       placeholder: 'Задайте вопрос или введите команду для 3D частиц...',
-      typing: 'KentaevAI 2.0 вычисляет тензорный ответ...',
+      typing: 'KentaevAI Crystal 2.2 вычисляет тензорный ответ...',
       micActive: 'Остановить запись',
       micInactive: 'Голосовой ввод',
       voiceActive: 'Озвучка ответов включена',
@@ -248,7 +248,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
         { label: '✦ Тарифтер', prompt: 'Қолжетімді тарифтерді көрсет' },
       ],
       placeholder: 'Сұрақ қойыңыз немесе 3D бөлшектерге пәрмен беріңіз...',
-      typing: 'KentaevAI 2.0 тензорлық жауапты есептеп жатыр...',
+      typing: 'KentaevAI Crystal 2.2 тензорлық жауапты есептеп жатыр...',
       micActive: 'Жазбаны тоқтату',
       micInactive: 'Дауыспен енгізу',
       voiceActive: 'Жауапты дыбыстау қосулы',
@@ -272,7 +272,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
         { label: '✦ Tiers', prompt: 'Show available tiers' },
       ],
       placeholder: 'Ask a question or issue a command for 3D particles...',
-      typing: 'KentaevAI 2.0 computing tensor inference...',
+      typing: 'KentaevAI Crystal 2.2 computing tensor inference...',
       micActive: 'Stop recording',
       micInactive: 'Voice input',
       voiceActive: 'Voice readout active',
@@ -355,7 +355,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
       toolAction = 'Particle Morph → Stage 06 (Laser Singularity)';
     } else if (text.includes('синапс') || text.includes('synapse') || text.includes('спирал') || text.includes('днк')) {
       onSetStage(1);
-      reply = '🧬 Перестраиваю структуру поля в двойную нейронную спираль KentaevAI 2.0.';
+      reply = '🧬 Перестраиваю структуру поля в двойную нейронную спираль KentaevAI Crystal 2.2.';
       toolAction = 'Particle Morph → Stage 01 (Neural Synapse)';
     } else if (text.includes('арка') || text.includes('gateway') || text.includes('точност') || text.includes('precision') || text.includes('портал')) {
       onSetStage(2);
@@ -379,17 +379,17 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
       toolAction = 'Particle Morph → Stage 07 (Sovereign Cage)';
     } else if (text.includes('волна') || text.includes('wave') || text.includes('старт')) {
       onSetStage(0);
-      reply = '🌊 Возвращаю квантовое волновое поле горизонта KentaevAI 2.0.';
+      reply = '🌊 Возвращаю квантовое волновое поле горизонта KentaevAI Crystal 2.2.';
       toolAction = 'Particle Morph → Stage 00 (Quantum Ocean)';
     } else if (text.includes('тариф') || text.includes('цен') || text.includes('pro') || text.includes('plan')) {
       onOpenPricing();
-      reply = '✦ Открываю панель тарифов KentaevAI 2.0: Free (0 ₸), Pro (4 990 ₸/мес) и Ultra (8 990 ₸/мес).';
+      reply = '✦ Открываю панель тарифов KentaevAI Crystal 2.2: Free (0 ₸), Pro (4 990 ₸/мес) и Ultra (8 990 ₸/мес).';
       toolAction = 'UI Action → Open Pricing Modal';
     } else if (imageSrc) {
-      reply = '👁 Мультимодальный анализ завершён:\n\n• Обнаружена гармоничная тональная гамма.\n• Объекты структурированы и готовы к обработке квантовым вектором KentaevAI 2.0.';
+      reply = '👁 Мультимодальный анализ завершён:\n\n• Обнаружена гармоничная тональная гамма.\n• Объекты структурированы и готовы к обработке квантовым вектором KentaevAI Crystal 2.2.';
       toolAction = 'Vision Model → Tensor Extraction';
     } else if (text.includes('кто ты') || text.includes('who are you')) {
-      reply = 'Я KentaevAI 2.0 — флагманский автономный искусственный интеллект в интерфейсе из жидкого стекла. Скорость: 185+ t/s, нулевая задержка, полная автономность.';
+      reply = 'Я KentaevAI Crystal 2.2 — флагманский автономный искусственный интеллект в кристаллическом интерфейсе из жидкого стекла. Скорость: 185+ t/s, нулевая задержка, кристаллическая точность и полная автономность.';
     } else if (text.includes('посчитай') || /[\d+\-*/^=]/.test(text)) {
       try {
         const mathClean = text.replace(/[^0-9+\-*/().^]/g, '');
@@ -401,7 +401,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
         reply = 'Вычислил аналитически в строгом детерминированном математическом контуре.';
       }
     } else {
-      reply = `🧠 [KentaevAI 2.0 Kernel]: Запрос успешно обработан.\n\n«${userText}»\n\nМодель оптимизирована для решения реальных задач без лишнего шума. Попробуйте вкладки сверху для кодогенерации, анализа картинок и бенчмарка!`;
+      reply = `🧠 [KentaevAI Crystal 2.2 Kernel]: Запрос успешно обработан.\n\n«${userText}»\n\nМодель оптимизирована для решения реальных задач без лишнего шума. Попробуйте вкладки сверху для кодогенерации, анализа картинок и бенчмарка!`;
     }
 
     return { reply, toolAction };
@@ -446,7 +446,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
 
   // --- Code Snippets Generator ---
   const codeSnippets = {
-    react: `// KentaevAI 2.0 Liquid Glass Particle Hook
+    react: `// KentaevAI Crystal 2.2 Liquid Glass Particle Hook
 import { useEffect, useRef } from 'react';
 
 export function useLiquidQuantumField() {
@@ -464,12 +464,12 @@ export function useLiquidQuantumField() {
       tensors[i + 2] = (Math.random() - 0.5) * 120;
     }
     
-    console.log("KentaevAI 2.0 Quantum Field Initialized:", tensors.length / 3);
+    console.log("KentaevAI Crystal 2.2 Quantum Field Initialized:", tensors.length / 3);
   }, []);
 
   return { fieldRef };
 }`,
-    python: `# KentaevAI 2.0 Autonomous Agent Execution Loop
+    python: `# KentaevAI Crystal 2.2 Autonomous Agent Execution Loop
 import asyncio
 from typing import Dict, Any
 
@@ -496,7 +496,7 @@ class KentaevKernel:
 kernel = KentaevKernel()
 result = asyncio.run(kernel.synthesize_plan("Deploy autonomous microservice"))
 print(result)`,
-    quantum: `// KentaevAI 2.0 Quantum Matrix Optimization Pass
+    quantum: `// KentaevAI Crystal 2.2 Quantum Matrix Optimization Pass
 function computeQuantumTensorShift(weights: number[][], entropy: number): number[][] {
   const rows = weights.length;
   const cols = weights[0].length;
@@ -513,14 +513,14 @@ function computeQuantumTensorShift(weights: number[][], entropy: number): number
 
   return optimized;
 }`,
-    sql: `-- KentaevAI 2.0 Sub-Millisecond Vector Query
+    sql: `-- KentaevAI Crystal 2.2 Sub-Millisecond Vector Query
 SELECT 
     document_id,
     author_tag,
     1 - (embedding <=> '[0.042, 0.912, 0.334, -0.118, 0.556]'::vector) AS cosine_similarity,
     created_at
 FROM knowledge_vectors
-WHERE tensor_partition = 'kentaev_2_0_prod'
+WHERE tensor_partition = 'kentaev_crystal_2_2_prod'
 ORDER BY embedding <=> '[0.042, 0.912, 0.334, -0.118, 0.556]'::vector
 LIMIT 5;`
   };
@@ -583,7 +583,7 @@ LIMIT 5;`
           aspectRatio: `${(img.width / img.height).toFixed(2)}:1`,
           colors: colorSamples,
           luminance: avgBri > 128 ? 'Светлое изображение' : 'Тёмное изображение (Dark Mode)',
-          summary: 'Обнаружены четкие границы и визуальная структура. Мультимодальный тензор KentaevAI 2.0 готов к декомпозиции.'
+          summary: 'Обнаружены четкие границы и кристаллическая визуальная структура. Мультимодальный тензор KentaevAI Crystal 2.2 готов к декомпозиции.'
         });
         soundEngine.playChime(740, 0.08);
       };
@@ -659,7 +659,7 @@ LIMIT 5;`
         latencyMs: Math.max(18, latencyMs),
         fps: 60,
         matrixOps: 400000,
-        status: 'ОТЛИЧНО: Система работает на пиковой производительности KentaevAI 2.0.'
+        status: 'ОТЛИЧНО: Система работает на пиковой производительности KentaevAI Crystal 2.2.'
       });
       setIsBenchmarking(false);
       soundEngine.playChime(880, 0.1);
@@ -671,16 +671,16 @@ LIMIT 5;`
   return (
     <div
       onClick={onClose}
-      className={`fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/85 backdrop-blur-xl animate-fadeIn overscroll-none ${
-        isMaximized ? 'p-0' : 'p-0 sm:p-2 md:p-3 lg:p-4'
+      className={`fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40 backdrop-blur-sm animate-fadeIn overscroll-none transition-all duration-300 ${
+        isMaximized ? 'p-0' : 'p-1 sm:p-2 md:p-3 lg:p-4'
       }`}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`relative flex flex-col liquid-glass overflow-hidden shadow-2xl overscroll-contain transition-all duration-200 ${
+        className={`relative flex flex-col liquid-glass overflow-hidden overscroll-contain transition-all duration-300 ${
           isMaximized
             ? 'w-full h-full max-w-none max-h-none rounded-none'
-            : 'w-full max-w-6xl xl:max-w-7xl h-[96dvh] sm:h-[94vh] lg:h-[92vh] max-h-[960px] rounded-t-3xl sm:rounded-3xl'
+            : 'w-full max-w-[98vw] 2xl:max-w-[1720px] h-[98dvh] sm:h-[96vh] rounded-2xl sm:rounded-3xl shadow-[0_20px_70px_rgba(0,0,0,0.55),0_0_50px_rgba(0,240,255,0.2)]'
         }`}
       >
         {/* Mobile Drag Indicator */}
@@ -709,10 +709,10 @@ LIMIT 5;`
               </div>
               <Cpu className="w-4 h-4 text-cyan-400 shrink-0" />
               <b className="font-display text-sm tracking-wide text-white">
-                KentaevAI 2.0 Workbench
+                KentaevAI Crystal 2.2 Workbench
               </b>
               <span className="text-[9px] font-mono-data px-2 py-0.5 rounded bg-cyan-950/70 text-cyan-300 border border-cyan-500/40 hidden xs:inline">
-                ULTRA PRO v2.0
+                CRYSTAL v2.2
               </span>
             </div>
 
@@ -788,7 +788,7 @@ LIMIT 5;`
                     className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'}`}
                   >
                     <div className="flex items-center gap-2 text-[10px] sm:text-[11px] font-mono-data text-white/35 mb-1 px-1">
-                      <span>{m.role === 'user' ? 'YOU' : 'KENTAEV.AI 2.0'}</span>
+                      <span>{m.role === 'user' ? 'YOU' : 'KENTAEV.AI CRYSTAL 2.2'}</span>
                       <span>·</span>
                       <span>{m.timestamp}</span>
                     </div>
@@ -863,7 +863,7 @@ LIMIT 5;`
             {/* Input Bar */}
             <form
               onSubmit={handleSend}
-              className="p-3 sm:p-4 border-t border-white/10 bg-white/[0.02] flex items-center gap-2 pb-[max(0.75rem,env(safe-area-inset-bottom))] shrink-0"
+              className="p-1.5 sm:p-2 border-t border-white/10 bg-white/[0.02] flex items-center gap-1.5 sm:gap-2 pb-[max(0.45rem,env(safe-area-inset-bottom))] shrink-0"
             >
               <input
                 type="file"
@@ -884,22 +884,22 @@ LIMIT 5;`
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
                 title="Прикрепить изображение"
-                className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl border border-white/10 hover:border-white/25 text-white/60 hover:text-white bg-white/[0.04] transition-colors"
+                className="w-8 h-8 sm:w-9 sm:h-9 shrink-0 flex items-center justify-center rounded-lg border border-white/10 hover:border-white/25 text-white/60 hover:text-white bg-white/[0.04] transition-colors"
               >
-                <Paperclip className="w-4 h-4" />
+                <Paperclip className="w-3.5 h-3.5" />
               </button>
 
               <button
                 type="button"
                 onClick={handleToggleMic}
                 title={isSpeechRecognitionActive ? terminalTexts.micActive : terminalTexts.micInactive}
-                className={`min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl border transition-colors ${
+                className={`w-8 h-8 sm:w-9 sm:h-9 shrink-0 flex items-center justify-center rounded-lg border transition-colors ${
                   isSpeechRecognitionActive
                     ? 'border-red-400 bg-red-950/60 text-red-300 animate-pulse'
                     : 'border-white/10 hover:border-white/25 text-white/60 hover:text-white bg-white/[0.04]'
                 }`}
               >
-                {isSpeechRecognitionActive ? <MicOff className="w-4 h-4 text-red-400" /> : <Mic className="w-4 h-4" />}
+                {isSpeechRecognitionActive ? <MicOff className="w-3.5 h-3.5 text-red-400" /> : <Mic className="w-3.5 h-3.5" />}
               </button>
 
               <input
@@ -907,15 +907,15 @@ LIMIT 5;`
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder={terminalTexts.placeholder}
-                className="flex-1 bg-white/[0.06] border border-white/15 focus:border-cyan-400/60 rounded-xl px-3.5 sm:px-4 py-2.5 text-base sm:text-sm text-white placeholder-white/35 outline-none font-sans transition-colors min-h-[44px]"
+                className="flex-1 bg-white/[0.06] border border-white/15 focus:border-cyan-400/60 rounded-lg px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm text-white placeholder-white/35 outline-none font-sans transition-colors min-h-[32px] sm:min-h-[36px]"
               />
 
               <button
                 type="submit"
                 disabled={!input.trim() && !attachedImage}
-                className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 to-teal-400 text-slate-950 font-bold hover:opacity-95 active:scale-95 disabled:opacity-30 disabled:pointer-events-none transition-all"
+                className="w-8 h-8 sm:w-9 sm:h-9 shrink-0 flex items-center justify-center rounded-lg bg-gradient-to-r from-cyan-400 to-teal-400 text-slate-950 font-bold hover:opacity-95 active:scale-95 disabled:opacity-30 disabled:pointer-events-none transition-all"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-3.5 h-3.5" />
               </button>
             </form>
           </div>

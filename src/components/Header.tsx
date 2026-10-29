@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Terminal, Menu, X, ChevronRight } from 'lucide-react';
+import { Sparkles, Terminal, X, ChevronRight } from 'lucide-react';
 import { soundEngine } from '../utils/audio';
 import { STAGES } from '../utils/particleShapes';
 import { STAGE_TRANSLATIONS } from '../utils/translations';
@@ -32,8 +32,8 @@ export const Header: React.FC<HeaderProps> = ({
       mastery: 'Обучение',
       context: 'Память',
       pricing: 'Тарифы',
-      launch: 'KentaevAI 2.0',
-      chapters: 'Главы KentaevAI 2.0',
+      launch: 'Crystal 2.2',
+      chapters: 'Главы KentaevAI Crystal 2.2',
     },
     en: {
       arch: 'Architecture',
@@ -41,8 +41,8 @@ export const Header: React.FC<HeaderProps> = ({
       mastery: 'Mastery',
       context: 'Context',
       pricing: 'Pro Plans',
-      launch: 'KentaevAI 2.0',
-      chapters: 'KentaevAI 2.0 Chapters',
+      launch: 'Crystal 2.2',
+      chapters: 'KentaevAI Crystal 2.2 Chapters',
     },
     kk: {
       arch: 'Архитектура',
@@ -50,75 +50,81 @@ export const Header: React.FC<HeaderProps> = ({
       mastery: 'Шеберлік',
       context: 'Жады',
       pricing: 'Тарифтер',
-      launch: 'KentaevAI 2.0',
-      chapters: 'KentaevAI 2.0 бөлімдері',
+      launch: 'Crystal 2.2',
+      chapters: 'KentaevAI Crystal 2.2 бөлімдері',
     },
   }[lang];
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between gap-1 sm:gap-2.5 px-2 sm:px-4 md:px-8 py-1.5 sm:py-2.5 liquid-glass pt-[max(0.4rem,env(safe-area-inset-top))]">
-        {/* Zone 1: Brand Wordmark (Compact & sleek) */}
+      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between gap-1.5 sm:gap-3 px-3 sm:px-6 md:px-10 py-2 sm:py-2.5 bg-[#06060e]/80 backdrop-blur-2xl border-b border-cyan-500/20 shadow-[0_8px_32px_rgba(0,0,0,0.6),0_1px_0_rgba(255,255,255,0.08)_inset] pt-[max(0.45rem,env(safe-area-inset-top))] transition-all duration-300">
+        {/* Luminous hairline accent */}
+        <div className="absolute -bottom-[1px] left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent pointer-events-none" />
+
+        {/* Zone 1: Brand Wordmark (Compact, crystalline & sleek) */}
         <button
           onClick={() => {
             soundEngine.playInteraction();
             onSelectStage(0);
           }}
-          className="flex items-center gap-1 sm:gap-1.5 text-left text-white tracking-wider font-display font-bold text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0 group transition-opacity hover:opacity-90 min-h-[30px] sm:min-h-[36px]"
+          className="flex items-center gap-1.5 sm:gap-2.5 text-left text-white tracking-wider font-display font-bold text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0 group transition-all hover:opacity-95 min-h-[32px] sm:min-h-[36px]"
         >
-          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_#00f0ff] animate-pulse shrink-0" />
-          <span className="bg-gradient-to-r from-white via-cyan-100 to-cyan-400 bg-clip-text text-transparent">
-            KENTAEV<span className="text-cyan-400 font-mono-data text-[9px] sm:text-[10px] ml-0.5 font-semibold opacity-95">.AI 2.0</span>
+          <div className="relative flex items-center justify-center w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0">
+            <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-cyan-400 shadow-[0_0_12px_#00f0ff,0_0_24px_#00f0ff] animate-pulse" />
+            <span className="absolute inset-0 rounded-full bg-cyan-300/40 animate-ping" />
+          </div>
+          <span className="bg-gradient-to-r from-white via-cyan-100 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(0,240,255,0.4)] font-extrabold tracking-wide">
+            KENTAEV<span className="text-cyan-400 font-mono-data text-[9px] sm:text-[10px] ml-1 font-semibold tracking-wider">.AI CRYSTAL 2.2</span>
           </span>
         </button>
 
         {/* Zone 2: Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-7 text-xs tracking-wider uppercase font-medium text-white/60">
+        <nav className="hidden lg:flex items-center gap-8 text-[11px] tracking-[0.18em] uppercase font-mono-data font-medium text-white/70">
           <button
             onClick={() => onSelectStage(1)}
-            className="hover:text-cyan-300 transition-colors whitespace-nowrap shrink-0 hover:underline decoration-cyan-400/50 underline-offset-8"
+            className="hover:text-cyan-300 transition-all duration-200 whitespace-nowrap shrink-0 hover:drop-shadow-[0_0_10px_rgba(0,240,255,0.6)]"
           >
             {t.arch}
           </button>
           <button
             onClick={() => onSelectStage(2)}
-            className="hover:text-emerald-300 transition-colors whitespace-nowrap shrink-0 hover:underline decoration-emerald-400/50 underline-offset-8"
+            className="hover:text-emerald-300 transition-all duration-200 whitespace-nowrap shrink-0 hover:drop-shadow-[0_0_10px_rgba(16,185,129,0.6)]"
           >
             {t.precision}
           </button>
           <button
             onClick={() => onSelectStage(3)}
-            className="hover:text-pink-300 transition-colors whitespace-nowrap shrink-0 hover:underline decoration-pink-400/50 underline-offset-8"
+            className="hover:text-pink-300 transition-all duration-200 whitespace-nowrap shrink-0 hover:drop-shadow-[0_0_10px_rgba(244,114,182,0.6)]"
           >
             {t.mastery}
           </button>
           <button
             onClick={() => onSelectStage(4)}
-            className="hover:text-amber-300 transition-colors whitespace-nowrap shrink-0 hover:underline decoration-amber-400/50 underline-offset-8"
+            className="hover:text-amber-300 transition-all duration-200 whitespace-nowrap shrink-0 hover:drop-shadow-[0_0_10px_rgba(251,191,36,0.6)]"
           >
             {t.context}
           </button>
           <button
             onClick={onOpenPricing}
-            className="flex items-center gap-1.5 hover:text-white transition-colors whitespace-nowrap shrink-0"
+            className="flex items-center gap-1.5 px-3 py-1 rounded-xl border border-cyan-500/30 bg-cyan-950/40 text-cyan-200 hover:text-white hover:border-cyan-400/70 hover:bg-cyan-900/50 transition-all duration-200 whitespace-nowrap shrink-0 shadow-[0_0_15px_rgba(0,240,255,0.2)]"
           >
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+            <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
             <span>{t.pricing}</span>
           </button>
         </nav>
 
-        {/* Zone 3: Actions (Language, KentaevAI 2.0, Mobile Menu) */}
-        <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+        {/* Zone 3: Actions (Language, KentaevAI Crystal 2.2, Mobile Menu) */}
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           {/* Language selector */}
-          <div className="flex items-center text-[9px] sm:text-[10px] font-mono-data bg-white/[0.05] border border-white/10 rounded-lg p-0.5 shrink-0">
+          <div className="flex items-center text-[9px] sm:text-[10px] font-mono-data bg-white/[0.04] border border-white/[0.12] rounded-xl p-0.5 shrink-0 shadow-inner backdrop-blur-md">
             {(['ru', 'en', 'kk'] as const).map((l) => (
               <button
                 key={l}
                 onClick={() => onToggleLang(l)}
-                className={`px-1 sm:px-1.5 py-0.5 rounded uppercase min-w-[18px] sm:min-w-[22px] min-h-[22px] sm:min-h-[26px] flex items-center justify-center transition-colors ${
+                className={`px-1.5 sm:px-2 py-0.5 rounded-lg uppercase min-w-[20px] sm:min-w-[24px] min-h-[22px] sm:min-h-[26px] flex items-center justify-center transition-all duration-200 ${
                   lang === l
-                    ? 'bg-cyan-500/20 text-cyan-300 font-semibold'
-                    : 'text-white/50 hover:text-white'
+                    ? 'bg-gradient-to-r from-cyan-500/30 to-teal-500/30 text-cyan-300 font-bold border border-cyan-400/40 shadow-[0_0_8px_rgba(0,240,255,0.3)]'
+                    : 'text-white/60 hover:text-white hover:bg-white/5'
                 }`}
               >
                 {l}
@@ -126,32 +132,19 @@ export const Header: React.FC<HeaderProps> = ({
             ))}
           </div>
 
-          {/* Primary Action Button: KentaevAI 2.0 (Compact & refined) */}
+          {/* Primary Action Button: Crystal 2.2 Jewel */}
           <button
             onClick={() => {
               soundEngine.playInteraction();
               onOpenTerminal();
             }}
-            className="flex items-center gap-1 sm:gap-1.5 px-1.5 sm:px-2.5 py-1 sm:py-1.5 min-h-[28px] sm:min-h-[32px] text-[10px] sm:text-xs font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-300 rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.35)] hover:shadow-[0_0_20px_rgba(0,240,255,0.6)] active:scale-95 transition-all whitespace-nowrap shrink-0"
-            title="KentaevAI 2.0"
+            className="flex items-center gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 min-h-[28px] sm:min-h-[32px] text-[10px] sm:text-xs font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-300 rounded-xl shadow-[0_0_18px_rgba(0,240,255,0.45),inset_0_1px_1px_rgba(255,255,255,0.7)] hover:shadow-[0_0_28px_rgba(0,240,255,0.85)] hover:scale-[1.03] active:scale-95 transition-all duration-200 whitespace-nowrap shrink-0"
+            title="KentaevAI Crystal 2.2"
           >
             <Terminal className="w-3 sm:w-3.5 h-3 sm:h-3.5 shrink-0 stroke-[2.5]" />
-            <span className="font-bold tracking-wide">
-              <span className="hidden min-[380px]:inline">Kentaev</span>AI 2.0
+            <span className="font-extrabold tracking-wide font-mono-data">
+              <span className="hidden min-[380px]:inline">Crystal </span>2.2
             </span>
-          </button>
-
-          {/* Mobile Menu Trigger (button:nth-of-type(2)) - made compact and guaranteed visible on smartphones */}
-          <button
-            onClick={() => {
-              soundEngine.playInteraction();
-              setMobileMenuOpen(!mobileMenuOpen);
-            }}
-            className="lg:hidden w-7 h-7 sm:w-8 sm:h-8 flex shrink-0 items-center justify-center p-1 rounded-lg border border-white/20 text-white hover:text-cyan-300 bg-white/[0.08] hover:bg-white/[0.15] transition-all active:scale-95 shadow-sm"
-            aria-label="Toggle mobile chapters menu"
-            title={t.chapters}
-          >
-            {mobileMenuOpen ? <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> : <Menu className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
           </button>
         </div>
       </header>

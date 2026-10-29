@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronLeft, ChevronRight, Play, Pause, ArrowRight, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Pause, ArrowRight, Sparkles, Terminal } from 'lucide-react';
 import { STAGES } from '../utils/particleShapes';
 import { soundEngine } from '../utils/audio';
 import { STAGE_TRANSLATIONS, UI_TRANSLATIONS, Language } from '../utils/translations';
@@ -113,23 +113,22 @@ export const SlideOverlay: React.FC<SlideOverlayProps> = ({
 
           {/* Action Buttons with fluid hover effects */}
           <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
+            {/* button:nth-of-type(1) - Primary Action */}
             {isHero ? (
               <div className="relative group inline-block w-full sm:w-auto">
                 <div
-                  className="absolute -inset-1 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"
-                  style={{ background: stage.primaryColor }}
+                  className="absolute -inset-1 rounded-2xl sm:rounded-full blur-md opacity-70 group-hover:opacity-100 transition duration-500 animate-pulse"
+                  style={{ background: `linear-gradient(90deg, ${stage.primaryColor}, #00f0ff, #10b981)` }}
                 />
                 <button
                   onClick={() => {
                     soundEngine.playInteraction();
                     onStart();
                   }}
-                  className="relative w-full sm:w-auto min-h-[48px] flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full liquid-button text-white font-bold text-xs sm:text-sm tracking-wide group-hover:scale-[1.03] active:scale-[0.98] transition-all shadow-[0_0_25px_rgba(0,240,255,0.4)]"
+                  className="relative w-full sm:w-auto min-h-[50px] flex items-center justify-center gap-3 px-7 sm:px-9 py-3.5 sm:py-4 rounded-2xl sm:rounded-full bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-300 text-slate-950 font-extrabold text-xs sm:text-sm tracking-wider uppercase font-mono-data shadow-[0_0_30px_rgba(0,240,255,0.5),inset_0_1px_1px_rgba(255,255,255,0.8)] hover:shadow-[0_0_50px_rgba(0,240,255,0.85)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
                 >
-                  <span className="tracking-wider uppercase font-mono-data font-bold">
-                    {localizedData.cta}
-                  </span>
-                  <ArrowRight className="w-4 h-4 text-cyan-300 group-hover:translate-x-1.5 transition-transform" />
+                  <span className="font-extrabold tracking-wider">{localizedData.cta}</span>
+                  <ArrowRight className="w-4 h-4 text-slate-950 stroke-[2.5] group-hover:translate-x-1.5 transition-transform duration-300" />
                 </button>
               </div>
             ) : isFinale ? (
@@ -138,10 +137,10 @@ export const SlideOverlay: React.FC<SlideOverlayProps> = ({
                   soundEngine.playInteraction();
                   onStart();
                 }}
-                className="w-full sm:w-auto min-h-[48px] flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 rounded-xl text-slate-950 font-extrabold text-xs sm:text-sm tracking-wider uppercase font-mono-data bg-gradient-to-r from-cyan-300 via-teal-200 to-cyan-400 shadow-[0_0_35px_rgba(0,240,255,0.6)] hover:shadow-[0_0_45px_rgba(0,240,255,0.9)] hover:scale-[1.02] active:scale-[0.98] transition-all"
+                className="group relative overflow-hidden min-h-[50px] flex items-center justify-center gap-3 px-7 sm:px-9 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 text-slate-950 font-extrabold text-xs sm:text-sm tracking-wider uppercase font-mono-data shadow-[0_0_35px_rgba(0,240,255,0.6),inset_0_1px_1px_rgba(255,255,255,0.8)] hover:shadow-[0_0_55px_rgba(0,240,255,0.95)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
               >
                 <Sparkles className="w-4 h-4 animate-spin text-slate-950" style={{ animationDuration: '4s' }} />
-                <span>{localizedData.cta}</span>
+                <span className="font-extrabold tracking-wider">{localizedData.cta}</span>
               </button>
             ) : (
               <button
@@ -149,25 +148,26 @@ export const SlideOverlay: React.FC<SlideOverlayProps> = ({
                   soundEngine.playInteraction();
                   onNext();
                 }}
-                className="min-h-[46px] flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 rounded-xl text-xs font-mono-data tracking-wider uppercase text-white font-bold liquid-button hover:scale-[1.02] active:scale-95 transition-all shadow-md"
+                className="group relative overflow-hidden min-h-[48px] flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3 rounded-2xl bg-gradient-to-r from-cyan-500/25 via-teal-500/20 to-cyan-500/25 hover:from-cyan-400 hover:via-teal-300 hover:to-cyan-300 border border-cyan-400/50 hover:border-cyan-300 text-white hover:text-slate-950 font-bold text-xs sm:text-sm tracking-wider uppercase font-mono-data backdrop-blur-md shadow-[0_0_25px_rgba(0,240,255,0.25),inset_0_1px_1px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(0,240,255,0.7)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300"
               >
-                <span>{localizedData.cta}</span>
-                <ChevronRight className="w-4 h-4" />
+                <span className="relative z-10 font-bold">{localizedData.cta}</span>
+                <ChevronRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform stroke-[2.5]" />
               </button>
             )}
 
-            {/* Quick jump to interactive terminal */}
-            {!isHero && (
-              <button
-                onClick={() => {
-                  soundEngine.playInteraction();
-                  onStart();
-                }}
-                className="min-h-[44px] flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono-data text-cyan-300 hover:text-white bg-cyan-950/50 border border-cyan-500/30 tracking-wider uppercase hover:border-cyan-400 hover:bg-cyan-950/70 transition-all"
-              >
-                <span>{UI_TRANSLATIONS.terminalBtn[lang]} →</span>
-              </button>
-            )}
+            {/* button:nth-of-type(2) - Quick jump to interactive Crystal 2.2 terminal */}
+            <button
+              onClick={() => {
+                soundEngine.playInteraction();
+                onStart();
+              }}
+              className="group relative min-h-[48px] flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-2xl border border-cyan-400/40 hover:border-cyan-300/80 bg-gradient-to-r from-[#0c1424]/90 via-[#0a192f]/85 to-[#082032]/90 backdrop-blur-xl text-cyan-300 hover:text-white font-mono-data text-xs tracking-wider uppercase font-semibold shadow-[0_0_20px_rgba(0,240,255,0.18),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(0,240,255,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+            >
+              <span className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff] animate-ping" />
+              <Terminal className="w-3.5 h-3.5 text-cyan-400 group-hover:rotate-6 transition-transform" />
+              <span>{UI_TRANSLATIONS.terminalBtn[lang]}</span>
+              <ArrowRight className="w-3.5 h-3.5 text-cyan-400/80 group-hover:translate-x-1 transition-transform" />
+            </button>
           </div>
         </div>
       </div>

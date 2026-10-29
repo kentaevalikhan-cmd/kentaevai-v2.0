@@ -13,10 +13,10 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
   hero: {
     kk: {
       title: 'Біз болашақтың санасын күшейтеміз',
-      tagline: 'KentaevAI 2.0 кванттық нейрондық архитектурасын ашыңыз',
+      tagline: 'KentaevAI Crystal 2.2 кванттық нейрондық архитектурасын ашыңыз',
       description: 'Нақты уақыттағы мультимодальды пайымдау, лездік синтез және нөлдік кідіріспен орындау үшін жасалған дербес, егеменді интеллект өзегі.',
       kicker: 'КВАНТТЫҚ КӨКЖИЕК',
-      cta: 'Архитектураны зерттеу 2.0',
+      cta: 'Архитектураны зерттеу Crystal 2.2',
       metrics: [
         { label: 'Токен жылдамдығы', value: '185 т/с' },
         { label: 'Суық кідіріс', value: '42мс' },
@@ -25,10 +25,10 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     },
     ru: {
       title: 'Мы создаем интеллект будущего',
-      tagline: 'Откройте квантовую нейронную архитектуру KentaevAI 2.0',
+      tagline: 'Откройте квантовую нейронную архитектуру KentaevAI Crystal 2.2',
       description: 'Автономный, суверенный движок искусственного интеллекта для мультимодальных рассуждений в реальном времени, мгновенного синтеза и работы с нулевой задержкой.',
       kicker: 'КВАНТОВЫЙ ГОРИЗОНТ',
-      cta: 'Исследовать архитектуру 2.0',
+      cta: 'Исследовать архитектуру Crystal 2.2',
       metrics: [
         { label: 'Скорость токенов', value: '185 т/с' },
         { label: 'Холодная задержка', value: '42мс' },
@@ -37,10 +37,10 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     },
     en: {
       title: 'We power the minds of the future',
-      tagline: 'Discover the quantum neural architecture behind KentaevAI 2.0',
+      tagline: 'Discover the quantum neural architecture behind KentaevAI Crystal 2.2',
       description: 'An autonomous, sovereign intelligence engine engineered for real-time multimodal reasoning, instant synthesis, and zero-latency execution.',
       kicker: 'THE QUANTUM HORIZON',
-      cta: 'Explore Architecture 2.0',
+      cta: 'Explore Architecture Crystal 2.2',
       metrics: [
         { label: 'Token Speed', value: '185 t/s' },
         { label: 'Cold Latency', value: '42ms' },
@@ -128,7 +128,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     kk: {
       title: 'Шынайы шеберлікке жеткізген жаттығулар',
       tagline: 'Жоғары энтропиялық логикалық сынақтар мен нақты код негізінде шыңдалған',
-      description: 'Интернетті жай ғана қорыту емес — KentaevAI 2.0 миллиондаған күрделі синтетикалық дилеммаларда және архитектураларды қайта құруда сыналған.',
+      description: 'Интернетті жай ғана қорыту емес — KentaevAI Crystal 2.2 миллиондаған күрделі синтетикалық дилеммаларда және архитектураларды қайта құруда сыналған.',
       kicker: 'ҚҰНДЫЛЫҚ · ШЕБЕРЛІК',
       cta: 'Келесі қағидат',
       metrics: [
@@ -140,7 +140,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     ru: {
       title: 'Опыт, ведущий к истинному мастерству',
       tagline: 'Обучен на высокоэнтропийных тестах рассуждений и реальных кодовых базах',
-      description: 'Не просто пересказ интернета — KentaevAI 2.0 закалялся на миллионах синтетических дилемм, рефакторинге реальных архитектур и решении сложных задач.',
+      description: 'Не просто пересказ интернета — KentaevAI Crystal 2.2 закалялся на миллионах синтетических дилемм, рефакторинге реальных архитектур и решении сложных задач.',
       kicker: 'ЦЕННОСТЬ · МАСТЕРСТВО',
       cta: 'Следующий принцип',
       metrics: [
@@ -152,7 +152,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     en: {
       title: 'The Reps That Led to Pure Mastery',
       tagline: 'Trained on high-entropy reasoning benchmarks & real codebases',
-      description: 'Not merely summarizing the web—KentaevAI 2.0 was forged across millions of synthetic adversarial dilemmas, refactoring real architectures, and solving non-trivial edge cases.',
+      description: 'Not merely summarizing the web—KentaevAI Crystal 2.2 was forged across millions of synthetic adversarial dilemmas, refactoring real architectures, and solving non-trivial edge cases.',
       kicker: 'WE VALUE · MASTERY',
       cta: 'Next Principle',
       metrics: [
@@ -204,7 +204,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     kk: {
       title: 'Тәуелсіз когнитивті ядро',
       tagline: 'Бұлыңғыр шынайы ниеттерді автономиялы түрде кезең-кезеңмен талдау',
-      description: 'Мүмкін емес нәрсені сұраңыз: KentaevAI 2.0 көпсатылы жоспарлар құрады, гипотезаларды тексереді және тәжірибеде сыналған нәтиже береді.',
+      description: 'Мүмкін емес нәрсені сұраңыз: KentaevAI Crystal 2.2 көпсатылы жоспарлар құрады, гипотезаларды тексереді және тәжірибеде сыналған нәтиже береді.',
       kicker: 'ҚҰНДЫЛЫҚ · ТӘУЕЛСІЗДІК',
       cta: 'Келесі қағидат',
       metrics: [
@@ -216,7 +216,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     ru: {
       title: 'Автономное когнитивное ядро',
       tagline: 'Самостоятельная декомпозиция сложных реальных намерений',
-      description: 'Спросите о невозможном: KentaevAI 2.0 строит многоэтапные планы, проверяет гипотезы, тестирует граничные условия и дает надежные решения.',
+      description: 'Спросите о невозможном: KentaevAI Crystal 2.2 строит многоэтапные планы, проверяет гипотезы, тестирует граничные условия и дает надежные решения.',
       kicker: 'ЦЕННОСТЬ · НЕЗАВИСИМОСТЬ',
       cta: 'Следующий принцип',
       metrics: [
@@ -228,7 +228,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     en: {
       title: 'The Independent Cognitive Core',
       tagline: 'Autonomous decomposition of ambiguous real-world intent',
-      description: 'Ask for the impossible: KentaevAI 2.0 generates multi-stage plans, tests hypotheses, validates boundary cases, and produces battle-tested deliverables.',
+      description: 'Ask for the impossible: KentaevAI Crystal 2.2 generates multi-stage plans, tests hypotheses, validates boundary cases, and produces battle-tested deliverables.',
       kicker: 'WE VALUE · INDEPENDENCE',
       cta: 'Next Principle',
       metrics: [
@@ -242,7 +242,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     kk: {
       title: 'Қарапайымдандыру шеберлігі',
       tagline: 'Шектен тыс күрделілікті мөлдір тазалық пен талғамға сығу',
-      description: 'Басқалар 5000 жол артық жүк қалдырған жерде, KentaevAI 2.0 тек ең маңызды өзекті қалдырады. Артық қоспасыз таза, сенімді код.',
+      description: 'Басқалар 5000 жол артық жүк қалдырған жерде, KentaevAI Crystal 2.2 тек ең маңызды өзекті қалдырады. Артық қоспасыз таза, сенімді код.',
       kicker: 'ҚҰНДЫЛЫҚ · ҚАРАПАЙЫМДЫЛЫҚ',
       cta: 'Келесі қағидат',
       metrics: [
@@ -254,7 +254,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     ru: {
       title: 'Способность упрощать',
       tagline: 'Сжатие предельной сложности в кристальную элегантность',
-      description: 'Там, где другие оставляют 5000 строк перегруженного кода, KentaevAI 2.0 выделяет самую суть. Чистая, модульная архитектура без лишнего мусора.',
+      description: 'Там, где другие оставляют 5000 строк перегруженного кода, KentaevAI Crystal 2.2 выделяет самую суть. Чистая, модульная архитектура без лишнего мусора.',
       kicker: 'ЦЕННОСТЬ · ПРОСТОТА',
       cta: 'Следующий принцип',
       metrics: [
@@ -266,7 +266,7 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     en: {
       title: 'The Capacity to Simplify',
       tagline: 'Compressing extreme complexity into crystalline elegance',
-      description: 'Where others leave you with 5,000 unmaintainable lines of bloat, KentaevAI 2.0 distills the essential core. Clean, readable, modular architecture with zero fluff.',
+      description: 'Where others leave you with 5,000 unmaintainable lines of bloat, KentaevAI Crystal 2.2 distills the essential core. Clean, readable, modular architecture with zero fluff.',
       kicker: 'WE VALUE · SIMPLICITY',
       cta: 'Next Principle',
       metrics: [
@@ -317,10 +317,10 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
   finale: {
     kk: {
       title: 'Біз сіздің жеңісіңіз үшін талмай жұмыс істейміз',
-      tagline: 'Болашақтың өнімдерін KentaevAI 2.0 көмегімен бүгін құрыңыз',
+      tagline: 'Болашақтың өнімдерін KentaevAI Crystal 2.2 көмегімен бүгін құрыңыз',
       description: 'Ескірген модельдерден асып түсіңіз. Кванттық жылдамдықпен ойлау, үздіксіз мультимодальды қабылдау және шығармашылық еркіндікті сезініңіз.',
       kicker: 'БОЛАШАҚ ОСЫ ЖЕРДЕН БАСТАЛАДЫ',
-      cta: 'KentaevAI 2.0 іске қосу',
+      cta: 'KentaevAI Crystal 2.2 іске қосу',
       metrics: [
         { label: 'Белсенді қолданушылар', value: '140,000+' },
         { label: 'Шешілген сұраулар', value: '82,000,000' },
@@ -329,10 +329,10 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     },
     ru: {
       title: 'Мы неустанно работаем ради ваших побед',
-      tagline: 'Создавайте продукты будущего вместе с KentaevAI 2.0 уже сегодня',
+      tagline: 'Создавайте продукты будущего вместе с KentaevAI Crystal 2.2 уже сегодня',
       description: 'Выйдите за рамки устаревших моделей. Ощутите квантовую скорость рассуждений, непрерывное мультимодальное восприятие и свободу творчества.',
       kicker: 'БУДУЩЕЕ НАЧИНАЕТСЯ ЗДЕСЬ',
-      cta: 'Запустить KentaevAI 2.0',
+      cta: 'Запустить KentaevAI Crystal 2.2',
       metrics: [
         { label: 'Активные пользователи', value: '140,000+' },
         { label: 'Решено задач', value: '82,000,000' },
@@ -341,10 +341,10 @@ export const STAGE_TRANSLATIONS: Record<string, Record<Language, LocalizedStage>
     },
     en: {
       title: 'We power you, relentlessly, to win',
-      tagline: 'Build the products of tomorrow with KentaevAI 2.0 today',
+      tagline: 'Build the products of tomorrow with KentaevAI Crystal 2.2 today',
       description: 'Step beyond legacy models. Experience quantum-fast reasoning, continuous multimodal perception, and fluid creative agency.',
       kicker: 'THE FUTURE STARTS HERE',
-      cta: 'Deploy KentaevAI 2.0',
+      cta: 'Deploy KentaevAI Crystal 2.2',
       metrics: [
         { label: 'Active Users', value: '140,000+' },
         { label: 'Queries Solved', value: '82,000,000' },
@@ -381,13 +381,13 @@ export const UI_TRANSLATIONS = {
     en: 'Swipe screen or drag finger to interact with quantum particles'
   },
   terminalBtn: {
-    kk: 'KentaevAI 2.0',
-    ru: 'KentaevAI 2.0',
-    en: 'KentaevAI 2.0'
+    kk: 'Crystal 2.2',
+    ru: 'Crystal 2.2',
+    en: 'Crystal 2.2'
   },
   mobileFloatingTerminal: {
-    kk: 'KentaevAI 2.0',
-    ru: 'KentaevAI 2.0',
-    en: 'KentaevAI 2.0'
+    kk: 'Crystal 2.2',
+    ru: 'Crystal 2.2',
+    en: 'Crystal 2.2'
   }
 };

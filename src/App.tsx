@@ -38,7 +38,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
           <div className="w-12 h-12 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300">
             <RotateCcw className="w-6 h-6 animate-spin" />
           </div>
-          <h2 className="text-xl font-bold font-display">KentaevAI перезапускается...</h2>
+          <h2 className="text-xl font-bold font-display">KentaevAI Crystal 2.2 перезапускается...</h2>
           <p className="text-xs text-white/60 max-w-sm">
             Произошло переключение графического контекста. Нажмите кнопку ниже для обновления.
           </p>

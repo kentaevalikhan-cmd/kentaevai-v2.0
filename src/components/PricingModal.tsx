@@ -15,8 +15,8 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose, lan
 
   const content = {
     ru: {
-      badge: 'ТАРИФНЫЕ ПЛАНЫ KENTAEV.AI 2.0',
-      title: 'Тарифные планы KentaevAI 2.0',
+      badge: 'ТАРИФНЫЕ ПЛАНЫ KENTAEV.AI CRYSTAL 2.2',
+      title: 'Тарифные планы KentaevAI Crystal 2.2',
       subtitle: 'От персонального исследования до промышленного внедрения суверенного искусственного интеллекта.',
       month: '/мес',
       toast: (name: string) => `Тариф ${name} выбран! Доступ будет открыт в ближайшем релизе 🚀`,
@@ -27,7 +27,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose, lan
           period: '',
           badge: 'Текущий',
           features: [
-            'Интерактивный доступ к KentaevAI 2.0',
+            'Интерактивный доступ к KentaevAI Crystal 2.2',
             '24 000 квантовых частиц в 60 FPS',
             'Мультимодальное зрение и анализ',
             'Векторная память до 128k токенов',
@@ -77,8 +77,8 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose, lan
       ],
     },
     en: {
-      badge: 'KENTAEV.AI 2.0 TIERS',
-      title: 'KentaevAI 2.0 Pricing Plans',
+      badge: 'KENTAEV.AI CRYSTAL 2.2 TIERS',
+      title: 'KentaevAI Crystal 2.2 Pricing Plans',
       subtitle: 'From personal research to enterprise-grade sovereign intelligence deployment.',
       month: '/mo',
       toast: (name: string) => `Plan ${name} selected! Access will unlock in upcoming release 🚀`,
@@ -89,7 +89,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose, lan
           period: '',
           badge: 'Current',
           features: [
-            'Interactive access to KentaevAI 2.0',
+            'Interactive access to KentaevAI Crystal 2.2',
             '24,000 quantum particles in 60 FPS',
             'Multimodal vision and diagnostics',
             'Vector memory up to 128k tokens',
@@ -139,8 +139,8 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose, lan
       ],
     },
     kk: {
-      badge: 'KENTAEV.AI 2.0 ТАРИФТЕРІ',
-      title: 'KentaevAI 2.0 Тарифтік Жоспарлары',
+      badge: 'KENTAEV.AI CRYSTAL 2.2 ТАРИФТЕРІ',
+      title: 'KentaevAI Crystal 2.2 Тарифтік Жоспарлары',
       subtitle: 'Жеке зерттеулерден бастап сувереннді жасанды интеллектті өндірістік енгізуге дейін.',
       month: '/ай',
       toast: (name: string) => `${name} тарифі таңдалды! Қолжетімділік жақын арада ашылады 🚀`,
@@ -151,7 +151,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose, lan
           period: '',
           badge: 'Ағымдағы',
           features: [
-            'KentaevAI 2.0 жүйесіне интерактивті қолжетімділік',
+            'KentaevAI Crystal 2.2 жүйесіне интерактивті қолжетімділік',
             '60 FPS жылдамдықтағы 24 000 кванттық бөлшектер',
             'Мультимодальды көру және талдау',
             '128k токенге дейінгі векторлық жады',
