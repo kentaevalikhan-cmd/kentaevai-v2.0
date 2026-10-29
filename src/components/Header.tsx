@@ -73,8 +73,8 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-cyan-400 shadow-[0_0_12px_#00f0ff,0_0_24px_#00f0ff] animate-pulse" />
             <span className="absolute inset-0 rounded-full bg-cyan-300/40 animate-ping" />
           </div>
-          <span className="bg-gradient-to-r from-white via-cyan-100 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(0,240,255,0.4)] font-extrabold tracking-wide">
-            KENTAEV<span className="text-cyan-400 font-mono-data text-[9px] sm:text-[10px] ml-1 font-semibold tracking-wider">.AI CRYSTAL 2.2</span>
+          <span className="animate-brand-color-flow inline-block font-extrabold tracking-wide">
+            KENTAEV<span className="text-cyan-300 font-mono-data text-[9px] sm:text-[10px] ml-1 font-semibold tracking-wider">.AI CRYSTAL 2.2</span>
           </span>
         </button>
 

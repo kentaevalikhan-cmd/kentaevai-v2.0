@@ -242,3 +242,57 @@
   filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.35));
 }
 
+@keyframes colorFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes auraPulseStatic {
+  0%, 100% {
+    filter: drop-shadow(0 2px 14px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 16px rgba(0, 240, 255, 0.55));
+  }
+  50% {
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 38px rgba(0, 240, 255, 0.95)) drop-shadow(0 0 60px rgba(52, 211, 153, 0.45));
+  }
+}
+
+.animate-color-flow {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #00f0ff 25%,
+    #34d399 50%,
+    #38bdf8 75%,
+    #ffffff 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: colorFlow 4s ease-in-out infinite, auraPulseStatic 4.5s ease-in-out infinite;
+}
+
+.animate-brand-color-flow {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #00f0ff 30%,
+    #5eead4 60%,
+    #38bdf8 85%,
+    #ffffff 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: colorFlow 3.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 14px rgba(0, 240, 255, 0.7));
+}
+

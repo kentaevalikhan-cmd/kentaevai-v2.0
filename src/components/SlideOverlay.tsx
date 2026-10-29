@@ -79,8 +79,8 @@ export const SlideOverlay: React.FC<SlideOverlayProps> = ({
             }}
           />
 
-          {/* Dominant Headline - 3D background fully visible behind, with crisp layered shadows */}
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12] text-balance drop-shadow-[0_2px_14px_rgba(0,0,0,0.98)] drop-shadow-[0_8px_32px_rgba(0,0,0,0.85)] font-display transition-all duration-500">
+          {/* Dominant Headline - with flowing gradient colors and zero physical movement */}
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12] text-balance font-display transition-all duration-500 animate-color-flow select-none">
             {localizedData.title}
           </h1>
 
